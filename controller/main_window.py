@@ -14,9 +14,9 @@ class MainWindow(QMainWindow):
         super(MainWindow, self). __init__()
         uic.loadUi(FILE_UI, self)
 
-        self.updateData.clicked.connect(self.updateDataCovid)
+        self.updateDataCovid.clicked.connect(self.updateData)
 
-        def updateDataCovid(self):
+        def updateData(self):
          """ 
             1 - Acessar a API e baixar/atualizar os dados do banco de dados
             2 - Pegar os dados a partir do banco de dados
